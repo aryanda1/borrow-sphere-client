@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.outer-div {
+	@apply border-white border-2 w-full mt-4 h-32 md:h-24;
+}
+
+.enclosing-link {
+	@apply p-4 w-full flex flex-col justify-between h-full;
+}

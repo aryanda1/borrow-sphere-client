@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.side-menu {
+	@apply min-h-screen h-full w-64 md:w-4/5 text-fuchsia-600 fixed top-0 left-0 z-10 duration-500 ease-out;
+	@apply bg-gradient-to-b from-white to-fuchsia-300 shadow-xl shadow-black;
+	transform: translateX(-240%);
+}
+
+.side-menu.side-menu-active {
+	@apply translate-x-0;
+}
+
+.side-menu button {
+	@apply border-fuchsia-600 border-t-2 text-fuchsia-600 text-2xl md:text-2xl p-3 transition-colors w-full;
+}
+
+.side-menu button:hover {
+	@apply bg-fuchsia-600 text-white;
+}
+
+.side-menu a {
+	@apply w-full md:w-4/5;
+}

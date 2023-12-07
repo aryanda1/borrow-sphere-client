@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+form {
+	@apply mt-1;
+}
+
+form .input-set {
+	@apply flex flex-col justify-center items-start w-full md:items-start;
+}
+
+form .input-set > div {
+	@apply md:flex-col;
+}
+
+.input-set label {
+	@apply font-thin text-lg text-fuchsia-200;
+}
+
+.edit-page form input {
+	@apply shadow-xl bg-transparent text-xl text-white p-1 h-10 mr-4;
+	border: 1px solid white;
+}
+
+*:focus {
+	outline: none;
+}
+
+.forms-container {
+	@apply md:ml-4;
+}
+
+.forms-container button {
+	@apply hover:bg-white hover:text-fuchsia-700 text-white font-bold p-2 transition-all rounded-3xl hover:-translate-x-1 hover:-translate-y-1;
+	border: 2px solid white;
+	@apply md:self-start md:mb-8;
+}
+
+.forms-container button[disabled] {
+	@apply border-gray-400 text-gray-400 cursor-not-allowed hover:bg-transparent hover:text-gray-400;
+}
+
+.button-check-container {
+	@apply self-start flex flex-row;
+}
+
+.change-success-check-mark {
+	@apply text-white text-4xl ml-4 duration-300 opacity-0;
+}
+
+.change-success-check-mark.show-check {
+	@apply opacity-100;
+}
