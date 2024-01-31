@@ -36,8 +36,6 @@ export default function RegisterErrorComponent(props: {
 				<p className="text-white text-center">
 					Invalid password.
 					<br />
-					Must be 8-24 characters long, contain at least one uppercase letter,
-					one lowercase letter, one number, and one special character.
 				</p>
 			</div>
 			<div
