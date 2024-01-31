@@ -34,7 +34,7 @@ export default function LandingPageComponent() {
 					className="font-bold text-5xl mt-20 mb-6 z-10 text-fuchsia-600"
 					variants={ListItemTransitionVariants}
 				>
-					Borrow Sphere
+					Quick lend
 				</motion.h1>
 				<motion.p
 					className="font-light text-3xl mb-10 z-10 text-fuchsia-200 md:text-center"
